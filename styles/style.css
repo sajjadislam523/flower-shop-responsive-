@@ -83,8 +83,9 @@
 
     .text-part {
         width: 100%;
+        height: auto;
         text-align: center;
-        /* justify-content: flex-start; */
+        margin-bottom: 25px;
     }
 
     .text-part h1 {
