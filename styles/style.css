@@ -12,7 +12,7 @@
 
 /* Header class designing */
 .flower-header {
-    width: 1344px;
+    max-width: 1344px;
     height: 612px;
     margin: 0 auto;
     display: flex;
@@ -20,15 +20,15 @@
 }
 
 .text-part {
-    width: 60%;
+    width: 50%;
     height: 612px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
-.img-container{
+.img-container {
     width: 40%;
     height: 612px;
     display: flex;
@@ -67,25 +67,54 @@
     cursor: pointer;
 }
 
-.flower-button:hover{
+.flower-button:hover {
     background-color: rgb(201, 72, 100);
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .flower-header {
+        width: 100%;
         flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 0;
     }
 
     .text-part {
-        width: 50%;
-        padding-left: 25px;
+        width: 100%;
+        text-align: center;
+        /* justify-content: flex-start; */
     }
 
     .text-part h1 {
-        color: rgb(39, 39, 39);
-        font-size: 25px;
-        font-weight: 800;
-        line-height: 20px;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .text-part p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .img-container {
+        width: 50%;
+        height: 60%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .img-container img{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .flower-button {
+        width: 100px;
+        height: 40px;
+        padding: 10px 23px;
+        font-size: .6em;
+        margin: 0 auto;
     }
 }
