@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: "Lato", sans-serif; */
+
+/* display 1366x768px */
+/* 0.72% of the display */
+
+/* shared class */
+.lato {
+    font-family: "Lato", sans-serif;
+}
+
+/* Header class designing */
+.flower-header {
+    width: 1344px;
+    height: 612px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-part {
+    width: 60%;
+    height: 612px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.img-container{
+    width: 40%;
+    height: 612px;
+    display: flex;
+    padding-right: 50px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-part h1 {
+    color: rgb(39, 39, 39);
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.text-part p {
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.flower-button {
+    width: 177px;
+    height: 64px;
+    padding: 20px 43px 20px 43px;
+    border-radius: 8px;
+    background: rgb(229, 84, 115);
+    color: white;
+    font-size: 1em;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+.flower-button:hover{
+    background-color: rgb(201, 72, 100);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .flower-header {
+        flex-direction: column;
+    }
+
+    .text-part {
+        width: 50%;
+        padding-left: 25px;
+    }
+
+    .text-part h1 {
+        color: rgb(39, 39, 39);
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 20px;
+    }
+}
